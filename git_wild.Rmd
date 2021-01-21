@@ -37,9 +37,16 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 
 ```{r break-it-1}
 
+
 # Time to break shit
 ggplot(data = diamonds, aes(x = carat, y = color)) +
   geom_jitter(aes(color = clarity))
+
+
+## Minnie edited graph to be weird
+ggplot(data = diamonds, aes(x = clarity, y = price)) +
+  geom_jitter(aes(color=color)) +
+  theme_light()
 
 ```
 
