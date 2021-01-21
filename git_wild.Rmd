@@ -52,10 +52,17 @@ ggplot(data = diamonds, aes(x = clarity, y = price)) +
 
 ```{r break-it-2}
 
+
 #Minnie: more graphs!!
 ggplot(data = diamonds, aes(x = carat, y = price)) +
   geom_point(aes(color=clarity),alpha=0.5) +
   theme_dark()
+
+# More diamonds
+ggplot(data = diamonds, aes(x = price, y = carat)) +
+  geom_jitter(aes(color=color)) +
+  theme_void()
+
 
 ```
 
