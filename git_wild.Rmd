@@ -36,9 +36,11 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 ## PART B: Make problems
 
 ```{r break-it-1}
-ggplot(data = diamonds, aes(x = depth, y = carat)) +
-  geom_point() +
-  theme_void()
+
+## Minnie edited graph to be weird
+ggplot(data = diamonds, aes(x = clarity, y = price)) +
+  geom_jitter(aes(color=color)) +
+  theme_light()
 ```
 
 ```{r break-it-2}
